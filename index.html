@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Chain Decarbonization</title>
+</head>
+<body>
+    <h1>Supply Chain Decarbonization</h1>
+
+    <div>
+        <h2>Add Product</h2>
+        <input type="text" id="productName" placeholder="Product Name">
+        <input type="number" id="carbonFootprint" placeholder="Carbon Footprint">
+        <button onclick="addProduct()">Add Product</button>
+    </div>
+
+    <div>
+        <h2>Transfer Product</h2>
+        <input type="number" id="productId" placeholder="Product ID">
+        <input type="text" id="newOwner" placeholder="New Owner Address">
+        <button onclick="transferProduct()">Transfer Product</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.3.5/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
